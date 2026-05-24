@@ -3,11 +3,12 @@
   imports = [
     ./modules/packages.nix
     ./modules/programs.nix
+    # ./modules/git.nix
   ];
 
   home.username = "o93";
   home.homeDirectory = "/home/o93";
-  home.stateVersion = "25.11"; # Please read the comment before changing.
+  home.stateVersion = "25.11";
 
   home.sessionVariables = {
     EDITOR = "nvim";
@@ -16,6 +17,5 @@
     PASTEL_COLOR_MODE = "24bit";
   };
 
-  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
