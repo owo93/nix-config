@@ -13,5 +13,9 @@
     watchexec
     cargo-binstall
     cargo-watch
+
+    clang-tools
+
+    devenv
   ];
 }
