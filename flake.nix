@@ -9,7 +9,7 @@
     };
 
     nvf = {
-      url = "git+ssh://git@github.com/owo93/nvf.git";
+      url = "github:owo93/nvim.nix?ref=main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

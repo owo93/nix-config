@@ -186,17 +186,18 @@
         "nvf": "nvf_2"
       },
       "locked": {
-        "lastModified": 1780211657,
-        "narHash": "sha256-/Ik//BM37QcYQZn/GLVtTiyaGPZyhFRhqSIkdT0BTMk=",
-        "ref": "refs/heads/main",
-        "rev": "c65db4200fef5dd018d8875f8b7561ba1c902497",
-        "revCount": 5,
-        "type": "git",
-        "url": "ssh://git@github.com/owo93/nvf.git"
+        "lastModified": 1780220752,
+        "narHash": "sha256-6snAhKxwTtkA4QERb0mFJWzQHWmpf4B1uycjYgEaskE=",
+        "owner": "owo93",
+        "repo": "nvim.nix",
+        "rev": "9d9b95c1574301726c6487f421bd5fea1dd5e861",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "ssh://git@github.com/owo93/nvf.git"
+        "owner": "owo93",
+        "ref": "main",
+        "repo": "nvim.nix",
+        "type": "github"
       }
     },
     "nvf_2": {
