@@ -1,8 +1,14 @@
-{ config, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
   imports = [
     ./modules/packages.nix
     ./modules/programs.nix
+    ./modules/nvf.nix
     # ./modules/git.nix
   ];
 
@@ -15,6 +21,14 @@
     XDG_CONFIG_HOME = "${config.home.homeDirectory}/.config";
     COLORTERM = "truecolor";
     PASTEL_COLOR_MODE = "24bit";
+  };
+
+  nixpkgs.config = {
+    allowUnfreePredicate =
+      pkg:
+      builtins.elem (lib.getName pkg) [
+        # add unfree pkgs here
+      ];
   };
 
   programs.home-manager.enable = true;
