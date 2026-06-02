@@ -1,7 +1,6 @@
 {
   config,
   lib,
-  pkgs,
   ...
 }:
 {
@@ -12,15 +11,16 @@
     # ./modules/git.nix
   ];
 
-  home.username = "o93";
-  home.homeDirectory = "/home/o93";
-  home.stateVersion = "25.11";
-
-  home.sessionVariables = {
-    EDITOR = "nvim";
-    XDG_CONFIG_HOME = "${config.home.homeDirectory}/.config";
-    COLORTERM = "truecolor";
-    PASTEL_COLOR_MODE = "24bit";
+  home = {
+    username = "o93";
+    homeDirectory = "/home/o93";
+    stateVersion = "25.11";
+    sessionVariables = {
+      EDITOR = "nvim";
+      XDG_CONFIG_HOME = "${config.home.homeDirectory}/.config";
+      COLORTERM = "truecolor";
+      PASTEL_COLOR_MODE = "24bit";
+    };
   };
 
   nixpkgs.config = {
