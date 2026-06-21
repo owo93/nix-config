@@ -6,16 +6,19 @@
 
     lsd
     lazygit
+    lazysql
     yazi
     ripgrep
     glow
 
     watchexec
     cargo-binstall
-    cargo-watch
-
     clang-tools
 
     devenv
+
+    ni
+    nodejs
+    pnpm
   ];
 }
