@@ -29,4 +29,11 @@
       "--preview-window right:60%"
     ];
   };
+
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 3";
+    flake = "/home/o93/~/.config/home-manager";
+  };
 }

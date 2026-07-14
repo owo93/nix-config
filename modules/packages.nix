@@ -6,7 +6,6 @@
 
     lsd
     lazygit
-    lazysql
     yazi
     ripgrep
     glow
@@ -17,7 +16,6 @@
 
     devenv
 
-    ni
     nodejs
     pnpm
   ];

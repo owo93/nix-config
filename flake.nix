@@ -8,10 +8,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:owo93/nvim.nix?ref=main";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nvf = {
+    #   url = "github:owo93/nvim.nix?ref=main";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    nvf.url = "git+file:///home/o93/projects/nvim-nvf?ref=develop";
   };
 
   outputs =
