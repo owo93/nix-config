@@ -13,7 +13,7 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    nvf.url = "git+file:///home/o93/projects/nvim-nvf?ref=develop";
+    nvf.url = "git+file:///home/o93/projects/nvim-nvf?ref=main";
   };
 
   outputs =
