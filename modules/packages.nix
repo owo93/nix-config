@@ -17,6 +17,7 @@
     devenv
 
     nodejs
+    deno
     pnpm
   ];
 }
