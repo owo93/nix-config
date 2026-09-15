@@ -1,10 +1,4 @@
+{ inputs, ... }:
 {
-  pkgs,
-  inputs,
-  ...
-}:
-{
-  home.packages = [
-    inputs.nvf.packages.${pkgs.system}.default
-  ];
+  imports = [ inputs.nvf.modules.homeManager.default ];
 }
