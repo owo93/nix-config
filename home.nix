@@ -6,10 +6,16 @@
 {
   imports = [
     ./modules/packages.nix
-    ./modules/programs.nix
-    ./modules/nvf.nix
-    # ./modules/git.nix
+    ./modules/programs
   ];
+
+  # Switch home generations with NH
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 3";
+    flake = "/home/o93/~/.config/home-manager";
+  };
 
   home = {
     username = "o93";
