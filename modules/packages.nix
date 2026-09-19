@@ -14,8 +14,6 @@
     cargo-binstall
     clang-tools
 
-    devenv
-
     nodejs
     deno
     pnpm
