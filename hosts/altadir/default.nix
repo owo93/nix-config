@@ -1,12 +1,11 @@
 {
   config,
-  lib,
   ...
 }:
 {
   imports = [
-    ./modules/packages.nix
-    ./modules/programs
+    ../../modules/packages.nix
+    ../../modules/programs
   ];
 
   # Switch home generations with NH
@@ -14,7 +13,7 @@
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep-since 4d --keep 3";
-    flake = "/home/o93/~/.config/home-manager";
+    flake = "${config.home.homeDirectory}/.config/home-manager";
   };
 
   home = {
@@ -29,13 +28,7 @@
     };
   };
 
-  nixpkgs.config = {
-    allowUnfreePredicate =
-      pkg:
-      builtins.elem (lib.getName pkg) [
-        # add unfree pkgs here
-      ];
-  };
+  nixpkgs.config.allowUnfree = true;
 
   programs.home-manager.enable = true;
 }

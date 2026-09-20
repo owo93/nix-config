@@ -34,7 +34,7 @@
           inherit inputs;
         };
 
-        modules = [ ./home.nix ];
+        modules = [ ./hosts/altadir ];
       };
     };
 }
